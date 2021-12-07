@@ -1,0 +1,378 @@
+/* для кирилицы &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap&subset=cyrillic-ext");
+/* font-family: 'Indie Flower', cursive; */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+ul {
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: black;
+	font-family: "Indie Flower", cursive;
+	font-size: 20px;
+	background: url(../img/wallpaper.jpeg) 0 0 / 100% no-repeat;
+	background-attachment: fixed;
+}
+html {
+	scroll-behavior: smooth;
+}
+p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.container {
+	height: 2500px;
+	max-width: 80%;
+	margin: 0 auto;
+	padding-top: 9px;
+	border-left: 5px dotted rgb(236, 120, 12);
+	border-right: 5px dotted rgb(236, 120, 12);
+}
+
+.header {
+	max-width: 95%;
+	margin: 0 auto;
+	background-color: rgb(235, 129, 30);
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 30px 0px 50px 0px;
+}
+
+.header__container {
+	background-color: rgb(48, 35, 35);
+	border-radius: 10px;
+	max-width: 80%;
+	margin: 0 auto;
+	position: fixed;
+	top: 1.5%;
+	left: 600px;
+	padding: 9px;
+}
+
+.header__list {
+	font-size: 0;
+}
+
+.header__list > li {
+	display: inline-block;
+	position: relative;
+	margin: 0px 30px 0px 0px;
+}
+
+.header__list > li:hover .header__sub-list {
+	display: block;
+}
+
+.header__list > li:hover .header__sub-list2 {
+	display: block;
+}
+
+.header__list > li:hover .header__link {
+	color: yellow;
+}
+
+.header__list > li:last-child {
+	margin-right: 0px;
+}
+
+.header__list > li:last-child .header__sub-list {
+	left: auto;
+	right: 0px;
+}
+
+.header__link {
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+	text-decoration: underline;
+	text-transform: uppercase;
+	border: 2px solid white;
+	padding: 10px 30px 10px 5px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.header__link:hover {
+	text-decoration: none;
+	font-size: 30px;
+	filter: drop-shadow(rgb(87, 19, 19));
+}
+
+.header__link::after {
+	content: "";
+	position: absolute;
+	background: url("../img/down-arrow.png") 0 0 no-repeat;
+	height: 24px;
+	width: 24px;
+	margin-top: 2px;
+}
+
+.header__sub-list {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0px;
+	min-width: 150px;
+	background-color: rgb(245, 222, 12);
+	padding: 10px;
+	display: none;
+}
+
+.header__sub-list li {
+	margin-bottom: 0px;
+}
+
+.header__sub-list li:last-child {
+	margin-bottom: 0px;
+}
+
+.header__sub-link {
+	font-size: 17px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.header__sub-link-green {
+	color: green;
+}
+
+.header__sub-link:hover {
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+.header__sub-link-green::after {
+	content: "";
+	position: absolute;
+	background: url("../img/down-arrow.png") 0 0 no-repeat;
+	height: 24px;
+	width: 24px;
+}
+
+.header__sub-list2 {
+	position: absolute;
+	top: 55%;
+	left: 100%;
+	min-width: 150px;
+	background-color: rgb(48, 156, 26);
+	padding: 10px;
+	display: none;
+}
+
+.header__sub-link2 {
+	font-size: 18px;
+	color: rgb(186, 236, 186);
+	text-transform: uppercase;
+}
+
+.header__sub-link2:hover {
+	text-decoration: underline;
+	font-size: 17px;
+}
+
+.header__sub-list2 li:last-of-type::before {
+	content: "";
+	background: url("../img/ufo.png") 0 0 no-repeat;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 100%;
+	left: 30%;
+	z-index: 3;
+}
+
+.header__sub-list2 li:last-of-type:hover .light {
+	display: block;
+}
+
+.light {
+	height: 0px;
+	width: 0px;
+	border-left: 320px solid transparent;
+	border-right: 320px solid transparent;
+	border-bottom: 640px solid rgba(66, 80, 66, 0.322);
+	position: absolute;
+	top: 100%;
+	left: 21%;
+	z-index: 2;
+	margin-left: -274px;
+	display: none;
+}
+
+.car {
+	width: 800px;
+	border-radius: 50px 221px 50px 50px;
+	border-bottom: 400px solid rgb(248, 142, 177);
+	border-right: 300px solid rgb(248, 142, 177);
+	margin-top: 200px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	outline: 3px dashed black;
+}
+
+.absolute {
+	position: absolute;
+	right: -20px;
+}
+
+.window1 {
+	position: absolute;
+	top: 19px;
+	left: 560px;
+	width: 200px;
+	height: 190px;
+	background-color: skyblue;
+	border-radius: 5% 100% 0% 15%;
+	border: 3px solid slategray;
+}
+
+.window2 {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 547px;
+	height: 150px;
+	background-color: skyblue;
+	border: 3px solid slategray;
+	border-radius: 100% 91% 0% 0%;
+	background: url(../img/listia_rastenie_zelenyj_136320_1920x1080.jpg) 0 0/75% repeat;
+}
+
+.fara {
+	position: absolute;
+	background-color: rgb(248, 233, 19);
+	top: 220px;
+	left: 740px;
+	width: 70px;
+	height: 60px;
+	border-radius: 100% 47% 66% 100%;
+	border-right: 5px solid black;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	filter: drop-shadow(20px 0px 10px rgb(248, 233, 19));
+}
+
+.back__wheel1 {
+	position: absolute;
+	border-radius: 100%;
+	top: 360px;
+	left: 550px;
+	background-color: black;
+	width: 170px;
+	height: 170px;
+}
+
+.back__wheel2 {
+	position: absolute;
+	border-radius: 100%;
+	top: 360px;
+	left: 70px;
+	background-color: black;
+	width: 170px;
+	height: 170px;
+}
+
+.door__left {
+	border-radius: 45% 0% 45% 0%;
+	position: absolute;
+	top: 160px;
+	left: 8px;
+	width: 280px;
+	height: 200px;
+	background: url(../img/car.jpeg) 0 0/75% repeat;
+	border: 3px solid rgb(4, 95, 16);
+}
+.door__right {
+	border-radius: 45% 0% 45% 0%;
+	position: absolute;
+	top: 160px;
+	left: 295px;
+	width: 260px;
+	height: 200px;
+	background: url(../img/car.jpeg) 0 0/75% repeat;
+	border: 3px solid rgb(4, 95, 16);
+}
+
+/* ============MAIN============ */
+
+.main {
+	border: 4px solid rgb(189, 74, 74);
+	max-width: 50%;
+	margin: 17% 0 0 3%;
+	padding: 50px;
+	background-color: rgba(36, 27, 27, 0.671);
+	color: white;
+	position: relative;
+	z-index: 10;
+}
+
+.block {
+	padding: 25px;
+	border: 4px solid rgb(223, 131, 11);
+}
+
+.text {
+	margin-bottom: 40px;
+	font-size: 20px;
+	padding-left: 50px;
+	position: relative;
+	border: 4px solid rgb(29, 193, 243);
+}
+
+.text::before {
+	content: "";
+	background: url("../img/check.png") 0 0 no-repeat;
+	width: 25px;
+	height: 19px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.text:last-child {
+	margin: 0;
+}
+
+.text:hover::before {
+	transform: scale(3.5) rotate(-360deg);
+}
